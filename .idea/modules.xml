@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculator_ver_Easy/Calculator_ver_Easy.iml" filepath="$PROJECT_DIR$/Calculator_ver_Easy/Calculator_ver_Easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeliveryApp/DeliveryApp.iml" filepath="$PROJECT_DIR$/DeliveryApp/DeliveryApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeliveryApp_new/DeliveryApp_new.iml" filepath="$PROJECT_DIR$/DeliveryApp_new/DeliveryApp_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElectricityBill/ElectricityBill.iml" filepath="$PROJECT_DIR$/ElectricityBill/ElectricityBill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SubtitleReviseProgram/SubtitleReviseProgram.iml" filepath="$PROJECT_DIR$/SubtitleReviseProgram/SubtitleReviseProgram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TRPG_ver_Easy/TRPG_ver_Easy.iml" filepath="$PROJECT_DIR$/TRPG_ver_Easy/TRPG_ver_Easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VisitorPrediction/VisitorPrediction.iml" filepath="$PROJECT_DIR$/VisitorPrediction/VisitorPrediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kioskProgram/kioskProgram.iml" filepath="$PROJECT_DIR$/kioskProgram/kioskProgram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiplicationTable/multiplicationTable.iml" filepath="$PROJECT_DIR$/multiplicationTable/multiplicationTable.iml" />
+    </modules>
+  </component>
+</project>

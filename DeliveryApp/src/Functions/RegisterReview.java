@@ -4,38 +4,11 @@ import java.util.Scanner;
 
 public class RegisterReview {
     Scanner input = new Scanner(System.in);
-    private String userName = "";    // 1
-    private String storeName = "";   // 2
-    private String menuName = "";    // 3
-    private String userStars = "";   // 4
-    private int feedbackStar = 0;   // 5
-    /*
-    1 ~ 4 변수 : 다른 패키지에도 사용될 변수. (public)
-    5 변수 : 내부에서만 사용될 변수. 문자열을 고르기위한 전달 변수. (private)
-     */
-    public String getUserName() {
-        return userName;
-    }
-    public String getUserStars() {
-        return userStars;
-    }
-    public String getMenuName() {
-        return menuName;
-    }
-    public String getStoreName() {
-        return storeName;
-    }
+
     public void feedbackInputInfo(){
+        int feedbackStar = 0;
         System.out.println("[안내] 고객님! 별점 등록을 진행합니다.");
-        System.out.println("[안내] 주문자 이름은 무엇인가요?");
-        System.out.print(">>>");
-        userName = input.next();    // 조회하기: 고객명[]에 저장
-        System.out.println("[안내] 음식점 상호는 무엇인가요?");
-        System.out.print(">>>");
-        storeName = input.next();   // 조회하기: 상호명[]에 저장
-        System.out.println("[안내] 주문하신 음식 이름은 무엇인가요?");
-        System.out.print(">>>");
-        menuName = input.next();    // 조회하기: 메뉴명[]에 저장
+        checkUserNameLogic();
         System.out.println("[안내] 음식맛은 어떠셨나요? (1점 ~ 5점)");
         System.out.print(">>>");
         feedbackStar = input.nextInt(); // 사용자 점수(숫자) -> 사용자 별점(문자열)
@@ -47,25 +20,38 @@ public class RegisterReview {
         }
         starPointList(feedbackStar);    // 조회하기: 별점[]에 저장
         System.out.println("[안내] 리뷰 등록이 완료되었습니다.");
+        Database.cntUser = 0;
     }
-    public String starPointList(int num){
+    private void checkUserNameLogic(){
+        Database.cntUser = 0;
+        while(true){
+            System.out.println("[안내] 주문자 이름은 무엇인가요?");
+            System.out.print(">>>");
+            String checkUserName = input.nextLine();
+            for (int i = 0; i < Database.userName.length; i++) {
+                if(checkUserName.equals(Database.userName[i])) Database.cntUser = i;
+                return;
+            }
+            System.out.println("주문자 목록에 없는 이름입니다. 다시 입력하여 주세요.");
+        }
+    }
+    private void starPointList(int num){
         switch (num) {
             case 1:
-                userStars = "★";
+                Database.starPoints[Database.cntUser] = "★";
                 break;
             case 2:
-                userStars = "★★";
+                Database.starPoints[Database.cntUser] = "★★";
                 break;
             case 3:
-                userStars = "★★★";
+                Database.starPoints[Database.cntUser] = "★★★";
                 break;
             case 4:
-                userStars = "★★★★";
+                Database.starPoints[Database.cntUser] = "★★★★";
                 break;
             case 5:
-                userStars = "★★★★★";
+                Database.starPoints[Database.cntUser] = "★★★★★";
                 break;
         }
-        return userStars;
     }
 }

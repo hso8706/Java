@@ -2,7 +2,6 @@ package Main;
 
 import Functions.*;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -13,9 +12,10 @@ public class Main {
         int cnt = 0;
         OwnerRegister ownerRegister = new OwnerRegister();
         CancelOwnerRegister cancelOwnerRegister = new CancelOwnerRegister();
-        LookUpReview lookUpReview;
-        Order order;
-        RegisterReview[] registerReview = new RegisterReview[0];
+        LookUpReview lookUpReview = new LookUpReview();
+        OrderMenu orderMenu = new OrderMenu();
+        RegisterReview registerReview = new RegisterReview();
+        PrintList printList = new PrintList();
 
         outer: while(true){
 
@@ -37,24 +37,17 @@ public class Main {
                     cancelOwnerRegister.cancelRegister();
                     break;
                 case 3:
-                    if(cnt==0){
-                        System.out.println("[안내] 등록된 별점 후기가 존재하지 않습니다. 다른 기능을 먼저 이용해주세요.");
-                        break;
-                    };
-                    lookUpReview = new LookUpReview(registerReview);
-                    lookUpReview.printInfo();
+                    orderMenu.order();
                     break;
                 case 4:
-                    order = new Order();
-                    order.orderMenu();
+                    registerReview.feedbackInputInfo();
                     break;
                 case 5:
-                    cnt++;
-                    registerReview = Arrays.copyOf(registerReview, registerReview.length + 1);
-                    registerReview[cnt - 1] = new RegisterReview();
-                    registerReview[cnt -1].feedbackInputInfo();
+                    printList.printListToUser();
                     break;
-                case 6: break outer;
+                case 6:
+                    lookUpReview.printInfo();
+                case 7: break outer;
             }
         }
     }
@@ -62,10 +55,11 @@ public class Main {
         System.out.println("-------------------------");
         System.out.println("1) [사장님용] 음식점 등록하기");
         System.out.println("2) [사장님용] 음식점 등록 취소하기");
-        System.out.println("3) [고객님과 사장님용] 음식점 별점 조회하기");
-        System.out.println("4) [고객님용] 음식 주문하기");
-        System.out.println("5) [고객님용] 별점 등록하기");
-        System.out.println("6) 프로그램 종료하기");
+        System.out.println("3) [고객님용] 음식 주문하기");
+        System.out.println("4) [고객님용] 별점 등록하기");
+        System.out.println("5) [공용] 음식점 목록 확인하기");
+        System.out.println("6) [공용] 음식점 별점 조회하기");
+        System.out.println("7) 프로그램 종료하기");
         System.out.println("-------------------------");
         System.out.println("[시스템] 무엇을 도와드릴까요? ");
         System.out.print(">>>");
