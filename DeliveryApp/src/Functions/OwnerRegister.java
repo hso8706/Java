@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class OwnerRegister {
     Scanner input = new Scanner(System.in);
-    static int checker = -1;
+    static int checker;
     public void inputOwnerStoreInfo() {
-        if(checkSlot() == -1) return;
+        checkSlot();
+        if(checker == -1) return;
         System.out.println("[안내] 반갑습니다. 가맹주님!");
         System.out.println("[안내] 음식점 상호는 무엇인가요?");
         System.out.print(">>>");
@@ -30,15 +31,14 @@ public class OwnerRegister {
         Database.price[checker] = input.nextInt();
         if (Database.price[checker]<0) errorPrice();
     }
-    private int checkSlot(){
+    private void checkSlot(){
         checker = -1;
         for (int i = 0; i < Database.cntArr.length; i++) {
-            if (Database.cntArr[i] == 0) {
+            if (Database.cntArr[i] == -1) {
                 checker = i;
-                return checker;
+                return;
             }
         }
         System.out.println("[시스템] 등록 가능한 공간이 없습니다. 먼저 공간을 비워 주세요.");
-        return checker;
     }
 }

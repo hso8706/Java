@@ -13,7 +13,7 @@ public class CancelOwnerRegister {
             inputName = input.nextLine();
             for (int i = 0; i < Database.cntArr.length; i++) {
                 if(inputName.equals(Database.storeName[i])){
-                    Database.storeName[i] = "[Blank}";
+                    Database.storeName[i] = "[Blank]";
                     Database.menuName[i] = "[Blank]";
                     Database.price[i] = 0;
                     Database.cntArr[i] = -1;
@@ -27,7 +27,7 @@ public class CancelOwnerRegister {
     private int checkSlot(){
         int checker = -1;
         for (int i = 0; i < Database.cntArr.length; i++) {
-            if(Database.cntArr[i] != 0){
+            if(Database.cntArr[i] != -1){
                 checker = i;
                 return checker;
             }

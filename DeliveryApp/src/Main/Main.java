@@ -19,11 +19,11 @@ public class Main {
 
         outer: while(true){
 
-            System.out.println("[치킨의 민족 프로그램 V1]");
+            System.out.println("\n[치킨의 민족 프로그램 V1]");
             printFunctions();
             userSelect = input.nextInt();
 
-            while (userSelect < 1 || userSelect > 6) {
+            while (userSelect < 1 || userSelect > 7) {
                 System.out.println("잘못된 입력입니다. 1 ~ 6번 사이로 입력하여 주세요.");
                 printFunctions();
                 userSelect = input.nextInt();
@@ -47,6 +47,7 @@ public class Main {
                     break;
                 case 6:
                     lookUpReview.printInfo();
+                    break;
                 case 7: break outer;
             }
         }

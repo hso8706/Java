@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03bec744-80ae-4689-82ae-50cecbdb2951" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/DeliveryApp_new.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/CancelOwnerRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/LookUpReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/OrderCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DeliveryApp_new/src/Main/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../multiplicationTable/MultiplicationTable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../multiplicationTable/MultiplicationTable.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "last_opened_file_path": "C:/Users/Jungho/Documents/GitHub/Java/DeliveryApp",
-    "settings.editor.selected.configurable": "build.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jungho/Documents/GitHub/Java/DeliveryApp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
