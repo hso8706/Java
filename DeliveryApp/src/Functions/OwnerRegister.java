@@ -11,7 +11,7 @@ public class OwnerRegister {
         int inputPrice = 0;
         int checker = -1;
         for (int i = 0; i < database.cntArr.length; i++) {
-            if (database.cntArr[i] == -1) {
+            if (database.cntArr[i] == 0) {
                 checker = i;
                 break;
             }

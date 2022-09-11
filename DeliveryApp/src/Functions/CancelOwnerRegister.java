@@ -9,7 +9,7 @@ public class CancelOwnerRegister {
         String inputName = "";
         int checker = -1;
         for (int i = 0; i < database.cntArr.length; i++) {
-            if(database.cntArr[i] != -1){
+            if(database.cntArr[i] != 0){
                 checker = i;
                 break;
             }

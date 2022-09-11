@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03bec744-80ae-4689-82ae-50cecbdb2951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Functions/LookUpReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Functions/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Functions/Owner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Functions/RegisterReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Functions/CancelOwnerRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Functions/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Functions/OwnerRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/DeliveryApp_new.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/CancelOwnerRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/LookUpReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/src/Functions/OrderCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DeliveryApp_new/src/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CostomerFunc/Start.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OwnerFunc/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeliveryApp/Functions/LookUpReview.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeliveryApp/Functions/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeliveryApp/Functions/Owner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeliveryApp/Functions/RegisterReview.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeliveryApp/Main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +42,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ETEyzod76fyy8fPajcCOPqsNZw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Jungho/Documents/GitHub/DeliveryApp",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "last_opened_file_path": "//wsl$/Ubuntu-20.04/home/hso8706/Java/DeliveryApp",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RunManager">
@@ -82,6 +96,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -91,5 +108,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
